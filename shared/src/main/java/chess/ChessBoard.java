@@ -7,9 +7,9 @@ package chess;
  * signature of the existing methods.
  */
 public class ChessBoard {
-
+    static String[][] board;
     public ChessBoard() {
-        
+        ChessBoard.board = new String[8][8];
     }
 
     /**
@@ -40,4 +40,5 @@ public class ChessBoard {
     public void resetBoard() {
         throw new RuntimeException("Not implemented");
     }
+        board = new String[8][8];
 }
